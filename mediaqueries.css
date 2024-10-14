@@ -1,0 +1,80 @@
+@media (max-width: 600px) {
+  #cursor {
+    display: none;
+  }
+  #page1 {
+    nav {
+      height: 18vw;
+    }
+    nav ul {
+      top: 18vw;
+      left: 0;
+      right: 0;
+      font-size: 7vw;
+      background-color: #dadada;
+      position: absolute;
+      flex-direction: column;
+      text-align: center;
+      gap: 0;
+      height: 87vh;
+      overflow: hidden;
+      transition: all 1s ease-in-out;
+      z-index: 99;
+    }
+    nav ul li {
+      padding: 21px;
+    }
+    nav a {
+      color: #222;
+      font-weight: 400;
+    }
+    .ri-menu-2-line {
+      display: block;
+      cursor: pointer;
+    }
+    #center {
+      height: calc(100vh - 18vw);
+    }
+  }
+  #page2 {
+    /* height: 50vh;
+    width: 50%; */
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+  }
+  #page3 {
+    flex-direction: column;
+    padding: 0 0.1rem;
+    height: 100%;
+
+    #page3 p {
+      font-size: 1.2rem;
+    }
+    #aboutme h1 {
+      color: rgb(251, 94, 94);
+    }
+    #bottom {
+      display: none;
+    }
+  }
+
+  #page4 {
+    /* margin: 20vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: center; */
+  }
+
+  #page5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #page5 img {
+    display: flex;
+    height: 40vw;
+    width: 50vw;
+  }
+}

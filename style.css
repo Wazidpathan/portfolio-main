@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+html,
+body {
+  /* cursor: none; */
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+#cursor {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  color: 20px;
+  background-color: rgb(251, 94, 94);
+  position: fixed;
+  z-index: 99;
+}
+#main {
+  position: relative;
+  /* height: 100%; */
+  background-color: #222;
+  color: #fff;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+}
+nav {
+  height: 5vw;
+  /* width: 100%; */
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding: 4vw 6vw;
+  font-size: 1.5rem;
+  background-color: #dadada;
+  color: #222;
+}
+
+nav h1 {
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0 10vw 0 0;
+}
+nav ul li {
+  list-style: none;
+}
+#MenuList {
+  font-size: 400;
+  color: #222;
+}
+nav a {
+  text-decoration: none;
+  color: #222;
+  position: relative;
+}
+nav a:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(251, 94, 94);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s ease;
+}
+nav a:hover:after {
+  width: 100%;
+}
+.ri-menu-2-line {
+  display: none;
+  font-weight: 600;
+}
+
+#center {
+  height: calc(100vh - 8vw);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#center #name {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  /* position: relative; */
+  /* position: absolute; */
+}
+#center h1 {
+  font-size: 11vw;
+  width: 80%;
+  text-transform: uppercase;
+  cursor: none;
+}
+#center h2 {
+  margin-left: 38vw;
+  font-size: 5vw;
+  text-transform: capitalize;
+  color: #dadada;
+}
+
+/* PAGE2 */
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  /* background-color: aqua; */
+  overflow-x: hidden;
+  color: #dadada;
+}
+#page2 h1 {
+  font-size: 40vw;
+  /* display: flex;
+  flex-wrap: nowrap; */
+  /* overflow: hidden; */
+}
+#page3 {
+  height: 100vh;
+  width: 100%;
+  /* background-color: aqua; */
+  /* overflow-x: hidden; */
+  color: #dadada;
+  /* color: #222; */
+}
+#page3 #aboutme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#page3 p {
+  padding: 2rem;
+  width: 80%;
+  font-size: 1.5rem;
+}
+#education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#bottom {
+  height: 40vh;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#left {
+  height: 100%;
+  width: 50%;
+  /* background: #000; */
+  color: #dadada;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#right {
+  height: 100%;
+  width: 50%;
+  /* background: #000; */
+  color: #dadada;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PAGE4-MY PROJECT */
+#page4 {
+  height: 100vh;
+  width: 100%;
+  /* background-color: aqua; */
+  overflow-x: hidden;
+  color: #dadada;
+}
+#page4 h1 {
+  font-size: 40vw;
+}
+#page5 {
+  height: 100vh;
+  width: 100%;
+  padding: 3vw;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#page5 img {
+  cursor: pointer;
+  padding: 1vw;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 5px;
+}
+#page5 img:hover {
+  border: 1px solid #dadada;
+}
